@@ -1,13 +1,14 @@
-Materialize - jekyll
+Team Hephy Info - Blog
 ==============
 
+Friends of [TeamHephy.com](https://web.teamhephy.com)
 
-## Introducton
+## Derivative of GPLv3 Works
 
-This jekyll theme is based on [materialize](http://materializecss.com).
-(NOTE: this theme is only made for my own, but you can modify it freely.)
+This website / Application is based on
+[materialize](http://materializecss.com).
 
-[Open demo](https://mumuxme.github.io/materialize-jekyll/)
+[Theme Upstream](https://mumuxme.github.io/materialize-jekyll/)
 
 
 ## License
