@@ -1,0 +1,46 @@
+apiVersion: v1
+items:
+- apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    annotations:
+      kubernetes.io/ingress.class: addon-http-application-routing
+      kubernetes.io/tls-acme: "true"
+    creationTimestamp: "2018-08-26T16:24:08Z"
+    generation: 3
+    name: materialize-jekyll
+    namespace: materialize-jekyll
+    resourceVersion: "27319160"
+    selfLink: /apis/extensions/v1beta1/namespaces/materialize-jekyll/ingresses/materialize-jekyll
+    uid: 751184e5-a94c-11e8-915a-0a58ac1f1989
+  spec:
+    rules:
+    - host: blog.teamhephy.info
+      http:
+        paths:
+        - backend:
+            serviceName: materialize-jekyll
+            servicePort: 80
+          path: /
+    - host: materialize-jekyll.teamhephy.info
+      http:
+        paths:
+        - backend:
+            serviceName: materialize-jekyll
+            servicePort: 80
+          path: /
+    tls:
+    - hosts:
+      - blog.teamhephy.info
+      secretName: blog.teamhephy.info
+    - hosts:
+      - materialize-jekyll.teamhephy.info
+      secretName: materialize-jekyll.teamhephy.info
+  status:
+    loadBalancer:
+      ingress:
+      - ip: 168.62.55.0
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
