@@ -11,13 +11,13 @@ Just a brief announcement that the next Open Roadmap Community Planning meeting 
 
 Meeting time is set for 2:00PM EST on the first Thursday of every month.
 
-[Mark your calendars](https://calendar.google.com/event?action=TEMPLATE&tmeid=MTA5aG5qM2Zpa2NlcnZ2OXA4aHVvOTlxMzEga3FwZGgwMzM2bG5lOTkybGQzZzYwbjk2dGNAZw&tmsrc=kqpdh0336lne992ld3g60n96tc%40group.calendar.google.com)!
+[Mark your calendars](https://calendar.google.com/event?action=TEMPLATE&tmeid=MTA5aG5qM2Zpa2NlcnZ2OXA4aHVvOTlxMzFfMjAxOTAyMDdUMTkwMDAwWiBrcXBkaDAzMzZsbmU5OTJsZDNnNjBuOTZ0Y0Bn&tmsrc=kqpdh0336lne992ld3g60n96tc%40group.calendar.google.com&scp=ALL)!
 
 Thanks!
 
 – Kingdon
 
-<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTA5aG5qM2Zpa2NlcnZ2OXA4aHVvOTlxMzEga3FwZGgwMzM2bG5lOTkybGQzZzYwbjk2dGNAZw&amp;tmsrc=kqpdh0336lne992ld3g60n96tc%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTA5aG5qM2Zpa2NlcnZ2OXA4aHVvOTlxMzFfMjAxOTAyMDdUMTkwMDAwWiBrcXBkaDAzMzZsbmU5OTJsZDNnNjBuOTZ0Y0Bn&amp;tmsrc=kqpdh0336lne992ld3g60n96tc%40group.calendar.google.com&amp;scp=ALL"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
 
 P.S. if you are just trying to join the meeting, here is the Zoom link: [https://zoom.us/j/566476564](https://zoom.us/j/566476564)
 
