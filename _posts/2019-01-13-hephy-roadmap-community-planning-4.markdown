@@ -4,7 +4,7 @@ layout: post
 title:  "Meeting: Open Roadmap Community Planning #4"
 date:   2019-01-12
 category: "announcements"
-tags: [releases, 2019]
+tags: [roadmap, 2019]
 ---
 
 Just a brief announcement that the next Open Roadmap Community Planning meeting is set for February 7, 2019.  The Zoom link and Google Calendar invite are contained within this post.  Adding this meeting to your calendar will create a recurring appointment for 2:00PM Eastern US Time, on the first Thursday of every month.  Please join us!
