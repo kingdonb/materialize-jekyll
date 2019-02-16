@@ -38,13 +38,16 @@ Workflow is deployed on GKE.
 ### **Postgres Database Upgrade** Caution/Advice #2
 
 There will be a deep-dive blog episode, coming soon, to explain exactly how
-the beautiful postgres database backup works, *tl;dr:* **it is now _ever-so-slightly_
-possible to accidentally (and potentially irreversibly) *wipe out your database*
-during an upgrade.**
+the beautiful postgres database backup works, and how we kind-of broke it
+during v2.20.0, just a little bit, just so nobody noticed over 3 months.
+*tl;dr:* **it has been _ever-so-slightly_ possible to accidentally (and
+potentially irreversibly) *wipe out your database* during an upgrade.**
 
-For users that installed v2.20.0 prior to February 14, 2019 - [This is a bug][]
-that would only affect a narrow set of users and use cases. (Don't worry, it's
-really not as bad as it sounds. *But gee you're right, it sounds awful bad at first!*)
+For users that installed v2.20.0 prior to the February 14, 2019 release - **NB:**
+[This is a bug][] that would only affect a narrow set of users and use cases. (Don't
+worry, it's really not as bad as I made it out to sound. *But gee Kingdon,
+**wipe out your database** does sound kind of serious, I guess you're right, it
+sounds awful bad the way you started to explain it at first!*)
 
 Another general advice for Hephy Workflow v2.20.0 users: platform admins should
 remember to thoroughly understand backups and retention schedules, and always
