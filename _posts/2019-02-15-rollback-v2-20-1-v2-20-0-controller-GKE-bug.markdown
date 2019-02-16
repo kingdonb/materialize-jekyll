@@ -7,13 +7,9 @@ category: "announcements"
 tags: [rollback, 2019]
 ---
 
-The [issue was confirmed and triaged][] by users on our Slack channel on
-February 15, one day after [v2.20.1][] was released in the wild. Read more in
-this post for details about how this issue can be mitigated and recovered from.
+The [issue was confirmed and triaged][] by users on our Slack channel on February 15, one day after [v2.20.1][] was released in the wild. Read more in this post for details about how this issue can be mitigated and recovered from.
 
-If you have not upgraded yet, and wish to avoid this issue and wait for
-the next release, simply use Helm to install the previous version, `v2.20.0`
-– which works, and does not suffer from any (known) GKE compatibility issues.
+If you have not upgraded yet, and wish to avoid this issue and wait for the next release, simply use Helm to install the previous version, `v2.20.0` – which works, and does not suffer from any (known) GKE compatibility issues.
 
 ```bash
 helm install hephy/workflow -n hephy --namespace deis -f values.yaml --version v2.20.0
