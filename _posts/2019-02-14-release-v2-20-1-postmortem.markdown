@@ -12,7 +12,7 @@ Hephy Workflow v2.20.1 (codename: "Semver and the Point Release") is out!
 Users all should be warned that there have been some issues reported since it was released on Thursday, February 14, and some known bugs may now affect users of the current and previous release. Users please read all of this information carefully, especially if you have a Hephy Workflow installation in production.
 
 GKE users take special note of this upgrade, as we have accidentally broken
-some compatibility with the latest GKE releases, due to their lack of adherance
+some compatibility with the latest GKE releases, due to their lack of adherence
 with SemVer standards. This break was an oversight on our part; we have not
 made an emergency patch as the issue is quite complex and will take time to
 communicate with upstreams, and ascertain precisely how to correctly resolve
