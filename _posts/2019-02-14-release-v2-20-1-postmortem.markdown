@@ -75,12 +75,24 @@ will not experience any issue related to this chart error.  Clusters which have
 been online for more than 4 hours also would not be negatively impacted.
 
 We noticed the issue while we were beta-testing v2.20.1.  A freshly installed
-v2.20.0 with the default Minio object storage has 
+v2.20.0 with the default Minio object storage is at the greatest risk, as it is
+an in-memory store and as configured by default, will not survive a reboot.
+This also seems like the most common deployment that might be affected, as
+Minio in the Team Hephy release trunks has been upgraded less recently than
+Database.
 
-The bad chart was pushed to charts.teamhephy.com repo and circulated before the
-issue was identified.  No user clusters are known to have been impacted by this
-issue.  Properly configured clusters with [Persistent Object Storage](https://docs.teamhephy.info/installing-workflow/configuring-object-storage/)
-would not be at risk of data loss.  (Doesn't sound so bad now, does it?)
+The buried lede is that users can upgrade workflow-v2.20.0 to workflow-v2.20.1
+in minikube, and see the new Database upgrade scripts working (or, not working)
+depending on "which version of `v2.20.0`" you have. Folks who are not upgrading
+clusters on Minikube that have a short lifespan are not likely to notice this
+bug at all. (In fact, that's how we found it! This issue was never reported by
+any users, and **may never have even affected any clusters in the wild before,
+even once**.)
+
+The bad chart was unfortunately pushed to charts.teamhephy.com repo and
+circulated before the issue was identified.  Properly configured clusters with
+[Persistent Object Storage](https://docs.teamhephy.info/installing-workflow/configuring-object-storage/)
+would not be at risk of data loss.  **(Doesn't sound so bad now, does it?)**
 
 Also, database users must be aware that this release represents a breaking
 change for Workflow clusters with on-cluster databases, as upgrading will
