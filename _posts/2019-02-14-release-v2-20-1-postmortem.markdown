@@ -20,7 +20,7 @@ without causing harm.
 
 Another special warning for Hephy Workflow v2.20.0 users: platform admins should
 remember to thoroughly understand backups and retention schedules, and always
-test your platform database backups before an upgrade.  Test this upgrade in
+test your platform database backups before an upgrade. Test this upgrade in
 your staging environment first, if you have one, and as always recommended
 according to best practices advice, regularly test your backups in any case.
 
@@ -58,8 +58,9 @@ scheduled base-backup, that this critical first base backup is created.
 
 If your database has run for more than 4 hours, then the scheduled backup will
 run. There is no `gosu` or `su-exec` with the scheduled backup, and this issue
-should no longer affect you.  We hope you will appreciate that we are reporting
-this issue in the spirit of transparency, and an abundance of caution.
+should no longer affect you. We hope you will appreciate that we are reporting
+this issue in the spirit of transparency, and an abundance of caution, but do
+not be alarmed. Your cluster is probably not at risk, as I will explain here.
 
 #### v2.20.0 PostgreSQL Database Total Loss Scenario - Postmortem
 
@@ -71,10 +72,10 @@ that got merged and released with v2.20.0, but unfortunately all changes were
 not correctly reflected in the updated charts for [the postgres database](https://github.com/teamhephy/postgres).
 
 Workflow installations configured with an off-cluster or "external" database
-will not experience any issue related to this chart error.  Clusters which have
+will not experience any issue related to this chart error. Clusters which have
 been online for more than 4 hours also would not be negatively impacted.
 
-We noticed the issue while we were beta-testing v2.20.1.  A freshly installed
+We noticed the issue while we were beta-testing v2.20.1. A freshly installed
 v2.20.0 with the default Minio object storage is at the greatest risk, as it is
 an in-memory store and as configured by default, will not survive a reboot.
 This also seems like the most common deployment that might be affected, as
@@ -90,11 +91,16 @@ any users, and **may never have even affected any clusters in the wild before,
 even once**.)
 
 The bad chart was unfortunately pushed to charts.teamhephy.com repo and
-circulated before the issue was identified.  Properly configured clusters with
+circulated before the issue was identified. Properly configured clusters with
 [Persistent Object Storage](https://docs.teamhephy.info/installing-workflow/configuring-object-storage/)
-would not be at risk of data loss.  **(Doesn't sound so bad now, does it?)**
+would not be at risk of data loss after the first 4 hours. **(Doesn't sound so bad now, does it?)**
 
-Also, database users must be aware that this release represents a breaking
+Still, database users must be aware that this release represents a breaking
 change for Workflow clusters with on-cluster databases, as upgrading will
-automatically upgrade and overwrite any earlier backups unless a snapshot is taken.
+automatically upgrade any earlier backups. NB: Restoring your database to the
+old version after that will become a drastically higher level of difficult.
 
+We will follow up this Postmortem later with a deep-dive that explains how
+`deis-database` Postgres "WAL" backups work, and how users can verify that they
+are working before they are needed. Thanks for reading, remember to join us on
+Slack, and I hope you enjoyed this month's episode of the Hephy Postmortem show!
