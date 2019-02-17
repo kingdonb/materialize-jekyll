@@ -84,11 +84,14 @@ Database.
 
 The buried lede is that users can upgrade workflow-v2.20.0 to workflow-v2.20.1
 in minikube, and see the new Database upgrade scripts working (or, not working)
-depending on "which version of `v2.20.0`" you have. Folks who are not upgrading
-clusters on Minikube that have a short lifespan are not likely to notice this
-bug at all. (In fact, that's how we found it! This issue was never reported by
-any users, and **may never have even affected any clusters in the wild before,
-even once**.)
+depending on "which version of `v2.20.0`" you have, and how long you waited
+after cluster init to perform the upgrade.
+
+Folks who are not upgrading clusters on Minikube, and have a short cycle, or
+cluster lifespan, are not likely to notice this bug at all. (In fact, that's
+how we found it! In pre-release testing for v2.20.1. This issue was never
+reported by any users, and **may never even have affected any clusters in the
+wild at all, even once**.)
 
 The bad chart was unfortunately pushed to charts.teamhephy.com repo and
 circulated before the issue was identified. Properly configured clusters with
