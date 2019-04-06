@@ -44,7 +44,7 @@ the most dangerous of the currently known issues.
 For details about that issue, please read the [Release v2.20.1 Postmortem](/blog/posts/announcements/release-v2-20-1-postmortem).
 
 **This upgrade is not reversible, so you must take care.** It would be wise,
-and is stronly recommended, to take a snapshot of any `database` S3 buckets
+and is strongly recommended, to take a snapshot of any `database` S3 buckets
 first before upgrading, if feasible within your cluster's particular setup.
 
 The upgrade is not reversible because Postgres database upgrades are not
