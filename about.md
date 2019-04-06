@@ -10,60 +10,36 @@ permalink: /about/
 
 #### Introduction
 
-Hephy Workflow v2.20.1 (codename: "Semver and the Point Release") is out!
+Hephy Workflow v2.20.2 (codename: "Fixes, Documentation, Maintenance") is out!
 
-**This release comes with several *warnings!* NB** read more below
-
-Users all should be aware that there have been some issues reported since this
-was released on Thursday, February 14, and some known bugs may now affect users
-of the current and previous release. Users please read all of this information
-carefully, especially if you have a Hephy Workflow installation in production
-and want to keep it safe.
-
-### **GKE Warning** #1
-
-**GKE users take special note of this upgrade**, as we have accidentally broken
-some compatibility with the latest GKE releases, due to their lack of adherance
-with SemVer standards. This break was an oversight on our part; we have not
-made any emergency patch, as the issue is quite complex it will take time to
-communicate with upstreams, and ascertain precisely how to correctly resolve
-this safely and without causing any harm.
-
-If you have already upgraded and are affected by this, you can [take special steps][] and [read this blog post for details][],
-on how to safely roll-back the Controller to v2.20.0. This will hopefully
-mitigate the issue which may be preventing the Hephy controller from becoming
-healthy after the upgrade, or from normally answering Deis API requests when
-Workflow is deployed on GKE.
-
-### **Postgres Database Upgrade** Caution/Advice #2
+### **Postgres Database Upgrade** Caution/Advice
 
 There will be a deep-dive blog episode, coming soon, to explain exactly how
 the beautiful postgres database backup works, and how we kind-of broke it
 during v2.20.0, just a little bit, just so nobody noticed over 3 months.
+
+For users that installed v2.20.0 prior to the February 14, 2019 release - **NB:**
+[This is a bug][] that would only affect a narrow set of users and use cases.
+
 *tl;dr:* **it has been _ever-so-slightly_ possible to accidentally (and
 potentially irreversibly) *wipe out your database* during an upgrade.**
 
-For users that installed v2.20.0 prior to the February 14, 2019 release - **NB:**
-[This is a bug][] that would only affect a narrow set of users and use cases. (Don't
-worry, it's really not as bad as I made it out to sound. *But gee Kingdon,
+Those who ran `helm repo update` on or after February 14, 2019 are not affected.
+
+(Don't worry, it's really not as bad as I made it out to sound. *But gee Kingdon,
 **wipe out your database** does sound kind of serious, I guess you're right, it
 sounds awful bad the way you started to explain it at first!*)
 
-Another general advice for Hephy Workflow v2.20.0 users: platform admins should
+Another general advice for Hephy Workflow users at any version: platform admins should
 remember to thoroughly understand backups and retention schedules, and always
 test your platform database backups before performing an upgrade. Test upgrades
 in your staging environment first, if you have one, and as always recommended
 according to best-practices advice, regularly test your backups in any case.
 
-### Helm Repo Update **Warning** #3
+### Helm Repo Update **Warning**
 
 Hephy users should run `helm repo update` first, to begin to safely mitigate
 the most dangerous of the currently known issues.
-
-The buggy chart referenced in v2.20.0 ([This is a bug][]) post linked above,
-has been de-fanged and `https://charts.teamhephy.com`, our canonical charts
-repo, is no longer actively dangerous. In this case we have actually
-overwritten a slightly bad chart so that nobody will ever install it again.
 
 For details about that issue, please read the [Release v2.20.1 Postmortem](/blog/posts/announcements/release-v2-20-1-postmortem).
 
@@ -71,12 +47,14 @@ For details about that issue, please read the [Release v2.20.1 Postmortem](/blog
 and is stronly recommended, to take a snapshot of any `database` S3 buckets
 first before upgrading, if feasible within your cluster's particular setup.
 
-#### Current Patch Level - v2.20.1 (latest)
+The upgrade is not reversible because Postgres database upgrades are not
+reversible.  (Of course with the right kind of backup you could do anything)
 
-The [v2.20.1][] patch represents a major upgrade for [database](https://github.com/teamhephy/postgres)
-users, and many important security fixes for all Hephy Workflow users. Users
-should upgrade as soon as possible. GKE cluster users will have to [take special steps][]
-to receive the upgrades safely, until v2.20.2 is made available.
+#### Current Patch Level - v2.20.2 (latest)
+
+The [v2.20.2][] patch resolves the issue that caused GKE and some other cluster
+users to have to [take special steps][] to receive the database upgrades
+safely, prior to the v2.20.2 being made available.
 
 This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b>Azure Kubernetes Service</b>, we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is always tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
 
@@ -102,6 +80,7 @@ Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 Kingdon: <a href="mailto:{{ site.maint1_mail }}">{{ site.maint1_mail }}</a><br/>
 Anton: <a href="mailto:{{ site.maint2_mail }}">{{ site.maint2_mail }}</a>
 
+[v2.20.2]: https://github.com/teamhephy/workflow/releases/tag/v2.20.2
 [v2.20.1]: https://github.com/teamhephy/workflow/releases/tag/v2.20.1
 [v2.20.0]: https://github.com/teamhephy/workflow/releases/tag/v2.20.0
 [v2.19.4]: https://github.com/teamhephy/workflow/releases/tag/v2.19.4
