@@ -1,0 +1,38 @@
+---
+permalink: /blog/posts/announcements/season-of-docs-2019.html
+layout: post
+title:  "Google Season of Docs"
+date:   2019-04-19
+category: "announcements"
+tags: [rollback, 2019]
+---
+
+We are participating in Season of Docs 2019!
+
+#### Season of Docs Project Ideas
+
+Applicants will be expected to attend our monthly Open Roadmap community planning meetings and socialize with some members of our Open Source contributor community.  Here are some ideas for documentation or technical writing tasks:
+
+* The current docs are heavily derived from the original Deis docs.  We need to give them our own brand!  [Update our docs][docs]
+
+* Write a conceptual overview of, or introduction to, a product or feature.  We have several new features in development, and we will produce at least one minor release while Season of Docs is ongoing.  The technical writer can help us report on it, through the [blog][blog]!
+
+* The experimental native ingress feature has been in testing for years.  It is nearly ready to crystalize into a formal support.  Help us decide what features need to be completed in order to make this a formally supported first-class entity.  [Ingress Docs][ingress]
+
+* Create a tutorial for database backup and upgrading.  A recent release enabled Workflow Platform upgrades from Postgres v9 to Postgres v10 and v11, with an automated process that is streamlined into our Helm charts.  This feature is under-documented and under-appreciated!  This is a great opportunity for a technical writer to make their mark, with a deep-dive on our WAL backup feature and fault-modes analysis.
+
+* Create a set of focused how-to guides for building a Kubernetes + Workflow + cert-manager + nginx-ingress cluster, that you can run your blog or anything else on.  This can be a tutorial for intermediate to beginner audience, but it should cover everything that you need to harden your basic internet-facing Kubernetes+Workflow cluster, updated for 2019.
+
+* Clean up our [contributor's guide][contributing] that includes basic information about getting started as a contributor to Hephy/Deis Workflow, and review our policies for GDPR compliance, and everything else.  We don't collect any information in the form of cookies, but GDPR is complicated, and this might be something we still need to address.  Also, many of our links are out-of-date and still point to Deis websites that are long gone.
+
+In general, our websites need an update.  We have expertise around CI+CD and can handle the hosting, but someone needs to take a closer look and scrub for details.
+
+These are just some ideas for contributing documentors who apply to Season of Docs with Team Hephy.  We are a small community with several interested mentors, and we hope you will apply to Team Hephy in Season of Docs 2019.  Please join us [on the slack][slack] if you are interested in contributing!  Any interest that you show in advance of the application deadline will be taken strongly into account when selection time comes.  If you need guidance on how to install Team Hephy, check out [our main website][link].  Thanks for reading!
+
+[link]: https://web.teamhephy.com
+[blog]: https://blog.teamhephy.info
+[docs]: https://docs.teamhephy.com
+[ingress]: https://docs.teamhephy.com/installing-workflow/experimental-native-ingress/
+[contributing]: https://docs.teamhephy.com/contributing/overview/
+[#support]: https://teamhephy.slack.com/messages/CG908TB52/
+[slack]: https://slack.teamhephy.com/
