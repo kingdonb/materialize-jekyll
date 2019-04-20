@@ -4,7 +4,7 @@ layout: post
 title:  "Google Season of Docs"
 date:   2019-04-19
 category: "announcements"
-tags: [rollback, 2019]
+tags: [announcements, 2019]
 ---
 
 We are participating in Season of Docs 2019!
