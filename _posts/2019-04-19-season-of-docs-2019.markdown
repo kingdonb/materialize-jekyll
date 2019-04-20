@@ -27,7 +27,7 @@ Applicants will be expected to attend our monthly Open Roadmap community plannin
 
 In general, our websites need an update.  We have expertise around CI+CD and can handle the hosting, but someone needs to take a closer look and scrub for details.
 
-These are just some ideas for contributing documentors who apply to Season of Docs with Team Hephy.  We are a small community with several interested mentors, and we hope you will apply to Team Hephy in Season of Docs 2019.  Please join us [on the slack][slack] if you are interested in contributing!  Any interest that you show in advance of the application deadline will be taken strongly into account when selection time comes.  If you need guidance on how to install Team Hephy, check out [our main website][link].  Thanks for reading!
+These are just some ideas for contributing documentors who apply to Season of Docs with Team Hephy.  We are a small community with several interested mentors, and we hope you will apply to Team Hephy in Season of Docs 2019.  Please join us [on the slack][slack] if you are interested in contributing!  Any interest that you show in advance of the application deadline will be taken strongly into account when selection time comes.  If you need guidance on how to install Workflow from Team Hephy, check out [our main website][link].  Thanks for reading!
 
 [link]: https://web.teamhephy.com
 [blog]: https://blog.teamhephy.info
