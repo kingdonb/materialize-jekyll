@@ -7,7 +7,10 @@ category: "announcements"
 tags: [announcements, 2019]
 ---
 
-We are participating in Season of Docs 2019!
+<s>We are participating in Season of Docs 2019!</s> Our application for Season
+of Docs 2019 was unfortunately not accepted, but we have interested mentors,
+and we are still recruiting interested volunteers, writers, maintainers, and
+team members! Read more for some ideas on ways that you can help Team Hephy!
 
 #### Season of Docs Project Ideas
 
