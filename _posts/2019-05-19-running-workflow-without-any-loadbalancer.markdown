@@ -132,8 +132,8 @@ Hope this note saves some other cheapskates like me a couple dollars, --Kingdon
 #### Footnotes
 
 [1]* it breaks CI because any automation for a helm chart is likely to run
-`helm dep build` before installing the chart and its dependencies, at least
-Helm-Operator did run `helm dep update`, which means your change to the file
+`helm dep build` before installing the chart and its dependencies, at least for
+me Helm Operator did run `helm dep update`, which means your change to the file
 `charts/builder/templates/builder-service.yaml` right there in-place on your
 filesystem, is going to be overwritten by the copy from upstream before it gets
 installed.
