@@ -132,17 +132,23 @@ Hope this note saves some other cheapskates like me a couple dollars, --Kingdon
 #### Footnotes
 
 [1]* it breaks CI because any automation for a helm chart is likely to run
-`helm dep build` before installing the chart and its dependencies, which means
-your change to the file `charts/builder/templates/builder-service.yaml` right
-there in-place on your filesystem, is going to be overwritten by the copy from
-upstream before it gets installed.
+`helm dep build` before installing the chart and its dependencies, at least
+Helm-Operator did run `helm dep update`, which means your change to the file
+`charts/builder/templates/builder-service.yaml` right there in-place on your
+filesystem, is going to be overwritten by the copy from upstream before it gets
+installed.
 
-The solution is, we have to make this an actually supported configuration of
-Builder. In a later release, maybe `values.builder.service_type: NodePort` is
-a new option in the workflow chart.
+*Update:* Good news! There's `skipDepUpdate` for all (one) of us Weave+Hephy
+users out here, since [helm-operator:0.7.0][] added support for it nearly two
+months ago already.
+
+As a serious answer, we could make this an actually supported configuration of
+Builder. In a later release, maybe `values.builder.service_type: NodePort` is a
+new option in the workflow chart that can pass itself down to builder.
 
 [wiki page]: https://wiki.hephy.pro/books/deishephy-workflow-pad/page/deploying-workflow-with-the-helm-operator
 [provides an option]: https://github.com/kubernetes/contrib/tree/master/ingress/controllers/nginx/examples/tcp
 [read the docs]: https://teamhephy.info/docs/installing-workflow/experimental-native-ingress/
 [try web root]: https://web.teamhephy.com
 [reach us on slack]: https://slack.teamhephy.com
+[helm-operator:0.7.0]: https://github.com/weaveworks/flux/releases/tag/helm-0.7.0
