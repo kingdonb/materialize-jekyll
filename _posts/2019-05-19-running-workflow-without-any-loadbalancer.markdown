@@ -119,8 +119,8 @@ helm upgrade --install ingress stable/nginx-ingress \
 Now you have to be sure that Nginx is reachable on port 2222, however that may
 come to have been protected on `$cloudProvider` of your choice: by Security
 Group, Firewall, or something else. If you copied settings above, nothing else
-surprising has happened, and you created a DNS record pointed correctly at some
-of your nodes by the name of `deis-builder.your.platform_domain.example.com`
+surprising has happened, and you [created a DNS record pointed][] correctly at
+some of your nodes, CNAME at `deis-builder.your.platform_domain.example.com`
 then you should be able to `git push` to the Deis Builder component now!
 
 ### Synopsis
@@ -152,3 +152,4 @@ new option in the workflow chart that can pass itself down to builder.
 [try web root]: https://web.teamhephy.com
 [reach us on slack]: https://slack.teamhephy.com
 [helm-operator:0.7.0]: https://github.com/weaveworks/flux/releases/tag/helm-0.7.0
+[created a DNS record pointed]: https://docs.teamhephy.com/managing-workflow/configuring-dns/#with-a-load-balancer
