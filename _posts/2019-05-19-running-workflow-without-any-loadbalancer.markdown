@@ -66,7 +66,7 @@ it in a footnote[[1]](#footnotes). I assume you have this chart untarred, and yo
 edited the template files on disk. If you've done so and still trust me, run:
 
 ```
-kubectl --namespace=deis delete deis-builder
+kubectl --namespace=deis delete service deis-builder
 helm upgrade --install hephy --namespace deis workflow/
 ```
 
