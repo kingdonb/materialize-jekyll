@@ -8,7 +8,7 @@ tags:
 author: sivaram_mothiki
 ---
 
-In my [previous post](//posts/2015/schedulers-pt1-basic-monolithic) I introduced the concept of *scheduling* and took a look at two basic monolithic schedulers: *fleet* and *swarm*. In summary: schedulers are responsible for distributing jobs across a cluster of nodes. However, basic monolithic schedulers, by design, have limits on performance and throughput.
+In my [previous post](/posts/2015/schedulers-pt1-basic-monolithic) I introduced the concept of *scheduling* and took a look at two basic monolithic schedulers: *fleet* and *swarm*. In summary: schedulers are responsible for distributing jobs across a cluster of nodes. However, basic monolithic schedulers, by design, have limits on performance and throughput.
 
 In this post we take a look at how Kubernetes improves on the basic monolithic design.
 
@@ -30,7 +30,7 @@ Let’s take a more detailed look at all this.
 
 ### Pods
 
-A [pod](http://kubernetes.io/docs/user-guide/pods/) is the fundamental unit of Kubernetes. A pod is a group of containers that live on the same host and share the same set of [Linux namespaces](//posts/2015/linux-containers-isolation/).
+A [pod](http://kubernetes.io/docs/user-guide/pods/) is the fundamental unit of Kubernetes. A pod is a group of containers that live on the same host and share the same set of [Linux namespaces](/posts/2015/linux-containers-isolation/).
 
 When a pod is deployed, Kubernetes starts a container that locks the resources and namespace for the actual containers inside that pod. This is called a *pause container*.
 
@@ -96,15 +96,15 @@ The scheduler is responsible for tracking all the resources in the cluster and s
 
 Whenever the API server receives a request to schedule a pod, it places the request in a queue and this queue is continuously read by scheduler, which eventually schedules the pod. The scheduler is pluggable and supports multiple cluster scheduling algorithms.
 
-The scheduler is [monolithic](//posts/2015/schedulers-pt1-basic-monolithic/), but it’s decoupled from the API server and is uneffected by the availability of the API server. Even if the API server is unavailable, the scheduler can still repare pods, and can still read from the queue, and deploy pods in the cluster.
+The scheduler is [monolithic](/posts/2015/schedulers-pt1-basic-monolithic/), but it’s decoupled from the API server and is uneffected by the availability of the API server. Even if the API server is unavailable, the scheduler can still repare pods, and can still read from the queue, and deploy pods in the cluster.
 
-This decoupling helps Kubernetes overcome [the shortcomings of monolithic schedulers](//posts/2015/schedulers-pt1-basic-monolithic/).
+This decoupling helps Kubernetes overcome [the shortcomings of monolithic schedulers](/posts/2015/schedulers-pt1-basic-monolithic/).
 
 More info about the scheduler can be found [in the ](http://kubernetes.io/docs/admin/kube-scheduler/)[docs](http://kubernetes.io/docs/admin/kube-scheduler/).
 
 ### etcd
 
-etcd is a highly available [distributed key value store](//posts/2016/etcd-on-coreos/). It is designed to be simple, fast, reliable, and fault tolerant. etcd uses the [raft consensus algorithm](https://raft.github.io/) for leader election and logging.
+etcd is a highly available [distributed key value store](/posts/2016/etcd-on-coreos/). It is designed to be simple, fast, reliable, and fault tolerant. etcd uses the [raft consensus algorithm](https://raft.github.io/) for leader election and logging.
 
 ## Worker Node Services
 
@@ -122,7 +122,7 @@ The kube-proxy acts as a network proxy connecting locally running pods to outsid
 
 ## Conclusion
 
-In my [last post](//posts/2015/schedulers-pt1-basic-monolithic/) we looked at the design limitations of monolithic schedulers. Kubernetes improves on this design in several ways.
+In my [last post](/posts/2015/schedulers-pt1-basic-monolithic/) we looked at the design limitations of monolithic schedulers. Kubernetes improves on this design in several ways.
 
 Improvements over monolithic schedulers:
 
@@ -137,6 +137,6 @@ The design of Kubernetes makes it more than just a scheduler or an orchestration
 
 You can find more about continuously evolving state of Kubernetes in this [blog post](http://blog.kubernetes.io/2016/03/Kubernetes-1.2-even-more-performance-upgrades-plus-easier-application-deployment-and-management-.html).
 
-If you’re on Linux, [kube-up.sh](https://github.com/kubernetes/kubernetes/tree/master/cluster) is a good way to get started with Kubernetes. On OS X, [kube-solo](//posts/2015/zero-to-kubernetes-dev-environment-on-os-x) runs a single node CoreOS under [xhyve](https://github.com/mist64/xhyve) with Kubernetes installed in it.
+If you’re on Linux, [kube-up.sh](https://github.com/kubernetes/kubernetes/tree/master/cluster) is a good way to get started with Kubernetes. On OS X, [kube-solo](/posts/2015/zero-to-kubernetes-dev-environment-on-os-x) runs a single node CoreOS under [xhyve](https://github.com/mist64/xhyve) with Kubernetes installed in it.
 
 In my next post we will talk about Apache Mesos, a two level centralized scheduler. We’ll also look at how to deploy a Kubernetes framework in Mesos.
