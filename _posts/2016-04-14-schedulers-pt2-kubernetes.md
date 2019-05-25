@@ -8,7 +8,7 @@ tags:
 author: sivaram_mothiki
 ---
 
-In my [previous post](/posts/2015/schedulers-pt1-basic-monolithic) I introduced the concept of *scheduling* and took a look at two basic monolithic schedulers: *fleet* and *swarm*. In summary: schedulers are responsible for distributing jobs across a cluster of nodes. However, basic monolithic schedulers, by design, have limits on performance and throughput.
+In my [previous post](/posts/schedulers-pt1-basic-monolithic) I introduced the concept of *scheduling* and took a look at two basic monolithic schedulers: *fleet* and *swarm*. In summary: schedulers are responsible for distributing jobs across a cluster of nodes. However, basic monolithic schedulers, by design, have limits on performance and throughput.
 
 In this post we take a look at how Kubernetes improves on the basic monolithic design.
 
@@ -96,9 +96,9 @@ The scheduler is responsible for tracking all the resources in the cluster and s
 
 Whenever the API server receives a request to schedule a pod, it places the request in a queue and this queue is continuously read by scheduler, which eventually schedules the pod. The scheduler is pluggable and supports multiple cluster scheduling algorithms.
 
-The scheduler is [monolithic](/posts/2015/schedulers-pt1-basic-monolithic/), but it’s decoupled from the API server and is uneffected by the availability of the API server. Even if the API server is unavailable, the scheduler can still repare pods, and can still read from the queue, and deploy pods in the cluster.
+The scheduler is [monolithic](/posts/schedulers-pt1-basic-monolithic/), but it’s decoupled from the API server and is uneffected by the availability of the API server. Even if the API server is unavailable, the scheduler can still repare pods, and can still read from the queue, and deploy pods in the cluster.
 
-This decoupling helps Kubernetes overcome [the shortcomings of monolithic schedulers](/posts/2015/schedulers-pt1-basic-monolithic/).
+This decoupling helps Kubernetes overcome [the shortcomings of monolithic schedulers](/posts/schedulers-pt1-basic-monolithic/).
 
 More info about the scheduler can be found [in the ](http://kubernetes.io/docs/admin/kube-scheduler/)[docs](http://kubernetes.io/docs/admin/kube-scheduler/).
 
@@ -122,7 +122,7 @@ The kube-proxy acts as a network proxy connecting locally running pods to outsid
 
 ## Conclusion
 
-In my [last post](/posts/2015/schedulers-pt1-basic-monolithic/) we looked at the design limitations of monolithic schedulers. Kubernetes improves on this design in several ways.
+In my [last post](/posts/schedulers-pt1-basic-monolithic/) we looked at the design limitations of monolithic schedulers. Kubernetes improves on this design in several ways.
 
 Improvements over monolithic schedulers:
 

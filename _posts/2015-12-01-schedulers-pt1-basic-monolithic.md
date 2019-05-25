@@ -129,4 +129,4 @@ The resource manager and scheduler live in the same process, Monolithic schedule
 
 fleet is a low-end scheduler and is not resource aware. It is not advisable to use fleet for clusters larger than 100 nodes.  Fortunately, Deis V2 will work with Kubernetes, a much more advanced scheduler. Swarm has it’s own weakness too. For example, as of version 0.2, Swarm doesn’t support node failover. So if a node becomes unavailable, Swarm doesn’t reschedule the containers on the failed node.
 
-In [my next post](/posts/2016/schedulers-pt2-kubernetes/), I discuss advanced schedulers like Kubernetes, Apache Mesos, Omega, and Sparrow. I also talk about the ways these tools improve on the basic monolithic schedulers like Swarm and fleet.
+In [my next post](/posts/schedulers-pt2-kubernetes/), I discuss advanced schedulers like Kubernetes, Apache Mesos, Omega, and Sparrow. I also talk about the ways these tools improve on the basic monolithic schedulers like Swarm and fleet.
