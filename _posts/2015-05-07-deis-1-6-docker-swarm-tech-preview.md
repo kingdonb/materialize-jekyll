@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "Deis v1.6 - Docker Swarm Tech Preview"
 tags:
   - Deis v1 PaaS
