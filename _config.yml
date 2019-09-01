@@ -17,8 +17,8 @@ url: "https://blog.teamhephy.info"
 # footer 
 description: Hephy Workflow is the open source fork of Deis Workflow.
 
-favo: "Team Hephy Open Roadmap #6 – June 6, 2019"
-descrpt: Team Hephy hosts Open Roadmap Community Planning meetings at 2PM Eastern Time, on the first Thursday of every month.  Hephy Workflow is an open source Platform as a Service (PaaS) that adds a developer-friendly layer to any Kubernetes cluster, making it easy to deploy and manage applications.
+favo: "Helm Summit – September 2019 ( Team Hephy Open Roadmap Meetings Are Temporarily on Hiatus )"
+descrpt: Team Hephy normally hosts Open Roadmap Community Planning meetings at 2PM Eastern Time, on the first Thursday of every month.  Those community roadmap meetings are on hiatus, while Kingdon is presenting for FluxCD at the Helm Summit 2019, in Amsterdam, The Netherlands! I hope you can join me for Helm Summit.
 
 
 #
