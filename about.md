@@ -10,7 +10,7 @@ permalink: /about/
 
 #### Introduction
 
-Hephy Workflow v2.21.0 (codename: "Helm Dep Fixer-Upper") is out!
+Hephy Workflow v2.21.3 is out!
 
 ### **Postgres Database Upgrade** Caution/Advice
 
@@ -25,14 +25,14 @@ in your staging environment first, especially if you have important workloads,
 and as always recommended according to general best-practices advice, remember
 to test any important backups regularly (before you need them) in any case.
 
-#### Current Patch Level - v2.21.0 (latest)
+#### Current Patch Level - v2.21.3 (latest)
 
-The [v2.21.0][] release includes fresh buildpacks from upstream, some important
+The [v2.21.3][] release includes fresh buildpacks from upstream, some important
 security updates for nginx, as well as some new configuration headers in the
 router component, e2e testing, and other changes as documented in the changelog
 which you can find packaged in the chart.
 
-The [2.21.0 changelog][] is baked into the chart tarball, and will be posted on
+The [2.21.3 changelog][] is baked into the chart tarball, and will be posted on
 the docs site soon, with our next round of documentation updates as per usual.
 
 This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b>Azure Kubernetes Service</b>, we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is always tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
@@ -59,7 +59,8 @@ Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 Kingdon: <a href="mailto:{{ site.maint1_mail }}">{{ site.maint1_mail }}</a><br/>
 Anton: <a href="mailto:{{ site.maint2_mail }}">{{ site.maint2_mail }}</a>
 
-[2.21.0 changelog]: https://docs.teamhephy.com/changelogs/v2.21.0/
+[2.21.0 changelog]: https://docs.teamhephy.com/changelogs/v2.21.3/
+[v2.21.3]: https://github.com/teamhephy/workflow/releases/tag/v2.21.3
 [v2.21.0]: https://github.com/teamhephy/workflow/releases/tag/v2.21.0
 [v2.20.2]: https://github.com/teamhephy/workflow/releases/tag/v2.20.2
 [v2.20.1]: https://github.com/teamhephy/workflow/releases/tag/v2.20.1
