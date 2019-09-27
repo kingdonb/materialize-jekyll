@@ -7,7 +7,7 @@ category: "tutorials"
 tags: [blog, 2019, tutorial]
 ---
 
-When I learned that my favorite Nginx-Ingress [provides an option][] to do TCP load balancing, I decided to try and configure it with Hephy Workflow v2.21.0's `experimental_native_ingress` support, in order to obviate Builder's requirement of a separate L4 LoadBalancer under this configuration. As a Hephy Workflow user and long-time Nginx user this seemed like a natural extension that Native Ingress Support, when configured with nginx-ingress, should be capable of routing SSH traffic to Builder as part of the package.
+When I learned that my favorite [NGINX Ingress Controller][] [provides an option][] to do TCP load balancing, I decided to try and configure it with Hephy Workflow v2.21.0's `experimental_native_ingress` support, in order to obviate Builder's requirement of a separate L4 LoadBalancer under this configuration. As a Hephy Workflow user and long-time Nginx user this seemed like a natural extension that Native Ingress Support, when configured with nginx-ingress, should be capable of routing SSH traffic to Builder as part of the package.
 
 This post is meant to show briefly, just how it can be done today.
 
@@ -153,3 +153,4 @@ new option in the workflow chart that can pass itself down to builder.
 [reach us on slack]: https://slack.teamhephy.com
 [helm-operator:0.7.0]: https://github.com/weaveworks/flux/releases/tag/helm-0.7.0
 [created a DNS record pointed]: https://docs.teamhephy.com/managing-workflow/configuring-dns/#with-a-load-balancer
+[NGINX Ingress Controller]: https://kubernetes.github.io/ingress-nginx/user-guide/exposing-tcp-udp-services/
