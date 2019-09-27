@@ -27,15 +27,14 @@ to test any important backups regularly (before you need them) in any case.
 
 #### Current Patch Level - v2.21.3 (latest)
 
-The [v2.21.3][] release includes fresh buildpacks from upstream, some important
-security updates for nginx, as well as some new configuration headers in the
-router component, e2e testing, and other changes as documented in the changelog
-which you can find packaged in the chart.
+The [v2.21.3][] release includes updates for router, and removes the tcell
+security package which was proprietary, and our team no longer has access to.
+The previous release notably updated buildpacks and controller, and numerous
+other fixes which are enumerated in full on the changelogs.
 
-The [2.21.3 changelog][] is baked into the chart tarball, and will be posted on
-the docs site soon, with our next round of documentation updates as per usual.
+The [2.21.3 changelog][] is on the docs site, as usual.
 
-This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b>Azure Kubernetes Service</b>, we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is always tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
+This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b>Azure Kubernetes Service</b>, we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
 
 #### License
 
@@ -59,7 +58,7 @@ Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 Kingdon: <a href="mailto:{{ site.maint1_mail }}">{{ site.maint1_mail }}</a><br/>
 Anton: <a href="mailto:{{ site.maint2_mail }}">{{ site.maint2_mail }}</a>
 
-[2.21.0 changelog]: https://docs.teamhephy.com/changelogs/v2.21.3/
+[2.21.3 changelog]: https://docs.teamhephy.com/changelogs/v2.21.3/
 [v2.21.3]: https://github.com/teamhephy/workflow/releases/tag/v2.21.3
 [v2.21.0]: https://github.com/teamhephy/workflow/releases/tag/v2.21.0
 [v2.20.2]: https://github.com/teamhephy/workflow/releases/tag/v2.20.2
