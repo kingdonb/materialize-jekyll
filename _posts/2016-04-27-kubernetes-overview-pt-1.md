@@ -73,15 +73,15 @@ The master services are as follows:
 
 <ul>
 <li>
-<p>The <em>API server</em> is the central management point of the entire cluster, and allows the admin to configure Kubernetes workloads and organizational units. The API server is also responsible for making sure etcd and the service details of deployed containers are in agreement.
-<p>In other words, the API server validates and configures (on command) the data for pods, services, and replication controllers. It also assigns pods to nodes and synchronizes pod information with service configuration.
+<p>The <em>API server</em> is the central management point of the entire cluster, and allows the admin to configure Kubernetes workloads and organizational units. The API server is also responsible for making sure etcd and the service details of deployed containers are in agreement.</p>
+<p>In other words, the API server validates and configures (on command) the data for pods, services, and replication controllers. It also assigns pods to nodes and synchronizes pod information with service configuration.</p>
 </li>
 <li>
-<p>The <em>controller manager</em> service handles the replication processes defined by individual replication tasks. The details of these operations are written to etcd, which the controller manager watches for changes. When a change is seen, the controller manager reads the information and implements the replication procedure that fulfills the desired state, e.g. scaling the application group up or down.
-<p>In other words, the controller manager watches etcd for replication tasks and uses the API to enforce the desired state.
+<p>The <em>controller manager</em> service handles the replication processes defined by individual replication tasks. The details of these operations are written to etcd, which the controller manager watches for changes. When a change is seen, the controller manager reads the information and implements the replication procedure that fulfills the desired state, e.g. scaling the application group up or down.</p>
+<p>In other words, the controller manager watches etcd for replication tasks and uses the API to enforce the desired state.</p>
 </li>
 <li>
-<p>The <em>scheduler</em> assigns workloads to specific nodes in the cluster. It does this by reading in the workload operating requirements, analyzing the current environment (i.e. the health and operational details of the individual nodes in the cluster), and then placing the workload on a suitable node, or nodes.
+<p>The <em>scheduler</em> assigns workloads to specific nodes in the cluster. It does this by reading in the workload operating requirements, analyzing the current environment (i.e. the health and operational details of the individual nodes in the cluster), and then placing the workload on a suitable node, or nodes.</p>
 </li>
 </ul>
 
