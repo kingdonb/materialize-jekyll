@@ -2,7 +2,7 @@
 permalink: /blog/posts/announcements/open-roadmap-community-planning-jul-2020-notes.html
 layout: post
 title:  "Meeting Notes: Open Roadmap Community Planning"
-date:   2020-07-09
+date:   2020-07-05
 category: "announcements"
 tags: [roadmap, 2020]
 ---
