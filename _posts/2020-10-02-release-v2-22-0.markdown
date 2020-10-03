@@ -1,0 +1,27 @@
+---
+permalink: /blog/posts/announcements/release-v2-22-0.html
+layout: post
+title:  "Release: Hephy Workflow v2.22.0"
+date:   2020-10-02
+category: "announcements"
+tags: [releases, 2020]
+---
+
+Team Hephy's major release Hephy Workflow v2.22 is out!  The v2.22 series begins support for the modern stable APIs in Kubernetes, `apps/v1` with v2.21.6 as the final supported release on `extensions/v1beta1` for most major infrastructure objects. This release was prioritized to meet the needs of GKE users who are likely about to be forced into the upgrade. Celebrations are in order, as this major advancement has been a long time in the making! The next Open Roadmap meeting will be Thursday Nov 5 at 2PM Eastern.
+
+A Zoom meeting link is on the calendar event linked here.
+
+All are welcome to attend.  Meeting time is set for 2:00PM EST on the first Thursday of every month.
+
+Thanks!
+
+– Kingdon
+
+<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTA5aG5qM2Zpa2NlcnZ2OXA4aHVvOTlxMzFfMjAxOTAyMDdUMTkwMDAwWiBrcXBkaDAzMzZsbmU5OTJsZDNnNjBuOTZ0Y0Bn&amp;tmsrc=kqpdh0336lne992ld3g60n96tc%40group.calendar.google.com&amp;scp=ALL"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+
+P.S. if you are just trying to join the meeting, here is the Zoom link: [zoom.us/j/566476564](https://zoom.us/j/566476564)
+
+[the docs]: https://docs.teamhephy.com/
+[the docs mirror]: https://teamhephy.info/docs/workflow
+[contributor guide]: https://teamhephy.info/docs/contributing/overview/
+[teamhephy/workflow]: https://github.com/teamhephy/workflow
