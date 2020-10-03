@@ -10,31 +10,20 @@ permalink: /about/
 
 #### Introduction
 
-Hephy Workflow v2.21.4 is out!
+Hephy Workflow v2.22.0 is out! This brings us up to supported Kubernetes v1.16+
+which deprecated APIs and GKE upgrades which forced us to finally move on from
+the venerable `extensions/v1beta1` APIs for deployments and daemons, in order
+to stay in support.
 
-### **Postgres Database Upgrade** Caution/Advice
+#### Current Patch Level - v2.22.0 (latest)
 
-The Database component supports one-way upgrades to Postgres v11, since v2.20.0.
+Go ahead and install the [v2.22.0][] release to receive some good fixes, and a
+number of other important things which are enumerated in full on the changelog.
 
-A general advice for Hephy Workflow users at any version: platform admins should
-remember to thoroughly understand backups on a staging cluster, and confirm on
-your own details about how to test and verify them.
+The [2.22.0 changelog][] is on the docs site, as usual. Please go there for the
+details, and remember to check out the blog for more awesome Team Hephy news!
 
-Test your platform database backups before performing an upgrade. Test upgrades
-in your staging environment first, especially if you have important workloads,
-and as always recommended according to general best-practices advice, remember
-to test any important backups regularly (before you need them) in any case.
-
-#### Current Patch Level - v2.21.4 (latest)
-
-The [v2.21.4][] release includes some good fixes, and a number of things which
-are enumerated in full on the changelogs.
-
-The [2.21.4 changelog][] is on the docs site, as usual. Please go there for the
-details, check out the blog for more information about what's coming up next!
-The Open Roadmap notes have now been posted after January's Planning Meeting.
-
-This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b>Azure Kubernetes Service</b>, we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
+This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b><strike>Azure Kubernetes Service</strike></b> (caution), we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
 
 #### License
 
@@ -58,7 +47,10 @@ Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 Kingdon: <a href="mailto:{{ site.maint1_mail }}">{{ site.maint1_mail }}</a><br/>
 Anton: <a href="mailto:{{ site.maint2_mail }}">{{ site.maint2_mail }}</a>
 
-[2.21.4 changelog]: https://docs.teamhephy.com/changelogs/v2.21.4/
+[2.22.0 changelog]: https://docs.teamhephy.com/changelogs/v2.22.0/
+[v2.22.0]: https://github.com/teamhephy/workflow/releases/tag/v2.22.0
+[v2.21.6]: https://github.com/teamhephy/workflow/releases/tag/v2.21.6
+[v2.21.5]: https://github.com/teamhephy/workflow/releases/tag/v2.21.5
 [v2.21.4]: https://github.com/teamhephy/workflow/releases/tag/v2.21.4
 [v2.21.3]: https://github.com/teamhephy/workflow/releases/tag/v2.21.3
 [v2.21.0]: https://github.com/teamhephy/workflow/releases/tag/v2.21.0
