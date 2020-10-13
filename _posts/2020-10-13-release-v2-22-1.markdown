@@ -1,0 +1,30 @@
+---
+permalink: /blog/posts/announcements/release-v2-22-1.html
+layout: post
+title:  "Release: Hephy Workflow v2.22.1"
+date:   2020-10-13
+category: "announcements"
+tags: [releases, 2020]
+---
+
+Team Hephy's major release Hephy Workflow v2.22 is out! While this news is still fresh, the v2.22 series received a bevy of patches which are in a new release of Workflow, v2.22.1, this kicks off our continuing support for the modern stable APIs in Kubernetes, `apps/v1`. The other noteworthy change in this release, Azure Storage is now using the new `BlobServiceClient` in the Postgres database and in other locations, which (for now) as of this writing still remains untested. (I plan on testing it this evening on the cluster that hosts this post, unless someone else beats me to it first!)
+
+The Workflow umbrella chart added a new parameter, `azure-storage-conn-string` or `AZURE_STORAGE_CONNECTION_STRING` to facilitate [the transition to the new][] `BlobServiceClient` class in Python, again to emphasize this part of the change only affects Azure, but there are many package versions incremented in this release which should be of interest to everyone. Celebrations continue, as this major release has been a long time in the making and is still new! The next Open Roadmap meeting will be Thursday Nov 5 at 2PM Eastern.
+
+A Zoom meeting link is on the calendar event linked here.
+
+All are welcome to attend. Meeting time is set for 2:00PM EST on the first Thursday of every month.
+
+Thanks!
+
+– Kingdon
+
+<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTA5aG5qM2Zpa2NlcnZ2OXA4aHVvOTlxMzFfMjAxOTAyMDdUMTkwMDAwWiBrcXBkaDAzMzZsbmU5OTJsZDNnNjBuOTZ0Y0Bn&amp;tmsrc=kqpdh0336lne992ld3g60n96tc%40group.calendar.google.com&amp;scp=ALL"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+
+P.S. if you are just trying to join the meeting, here is the Zoom link: [zoom.us/j/566476564](https://zoom.us/j/566476564)
+
+[the transition to the new]: https://github.com/teamhephy/postgres/commit/004f62f3fa6aad98bad4ed4913315434e4e3401e
+[the docs]: https://docs.teamhephy.com/
+[the docs mirror]: https://teamhephy.info/docs/workflow
+[contributor guide]: https://teamhephy.info/docs/contributing/overview/
+[teamhephy/workflow]: https://github.com/teamhephy/workflow

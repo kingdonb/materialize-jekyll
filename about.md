@@ -25,7 +25,7 @@ lots of package upgrades which have been abbreviated in the GitHub changelog.
 The [full 2.22.1 changelog][] is [on the docs site][], as usual. Find out more
 details there, and remember to read the blog for more awesome Team Hephy news!
 
-This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b><strike>Azure Kubernetes Service</strike></b> (caution), we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
+This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b>Azure Kubernetes Service</b>, we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
 
 #### License
 
