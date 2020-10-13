@@ -10,18 +10,20 @@ permalink: /about/
 
 #### Introduction
 
-Hephy Workflow v2.22.0 is out! This brings us up to supported Kubernetes v1.16+
-which deprecated APIs and GKE upgrades which forced us to finally move on from
+Hephy Workflow v2.22.1 is out! The v2.22 series brings support current with Kubernetes v1.16+
+which deprecated APIs and GKE upgrades and forced us to finally move on from
 the venerable `extensions/v1beta1` APIs for deployments and daemons, in order
-to stay in support.
+to stay in support. We have worked out some kinks and our first patch release
+in the series, v2.22.1, is out now too, notably resolving some chart surprises
+on AWS and storage issues, as well as addressing problems relating to Helm 3.
 
-#### Current Patch Level - v2.22.0 (latest)
+#### Current Patch Level - v2.22.1 (latest)
 
-Go ahead and install the [v2.22.0][] release to receive some good fixes, and a
-number of other important things which are enumerated in full on the changelog.
+Go ahead and install the [v2.22.1][] release to get the latest Hephy, there are
+lots of package upgrades which have been abbreviated in the GitHub changelog.
 
-The [2.22.0 changelog][] is on the docs site, as usual. Please go there for the
-details, and remember to check out the blog for more awesome Team Hephy news!
+The [full 2.22.1 changelog][] is [on the docs site][], as usual. Find out more
+details there, and remember to read the blog for more awesome Team Hephy news!
 
 This release is tested and known to work with K8s clusters on <b>Amazon Web Services</b>, <b><strike>Azure Kubernetes Service</strike></b> (caution), we also support users on <b>Google Kubernetes Engine</b> and <b>Kubernetes on DigitalOcean Engine</b>.  Every release is tested on <a href="https://github.com/kubernetes/minikube">Minikube</a>, too.
 
@@ -47,7 +49,10 @@ Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 Kingdon: <a href="mailto:{{ site.maint1_mail }}">{{ site.maint1_mail }}</a><br/>
 Anton: <a href="mailto:{{ site.maint2_mail }}">{{ site.maint2_mail }}</a>
 
+[on the docs site]: https://docs.teamhephy.com/changelogs/v2.22.1/
+[full 2.22.1 changelog]: https://github.com/teamhephy/workflow/blob/master/src/changelogs/v2.22.1.md
 [2.22.0 changelog]: https://docs.teamhephy.com/changelogs/v2.22.0/
+[v2.22.1]: https://github.com/teamhephy/workflow/releases/tag/v2.22.1
 [v2.22.0]: https://github.com/teamhephy/workflow/releases/tag/v2.22.0
 [v2.21.6]: https://github.com/teamhephy/workflow/releases/tag/v2.21.6
 [v2.21.5]: https://github.com/teamhephy/workflow/releases/tag/v2.21.5
