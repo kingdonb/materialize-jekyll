@@ -1,0 +1,31 @@
+---
+permalink: /blog/posts/announcements/release-v2-22-3.html
+layout: post
+title:  "Release: Hephy Workflow v2.22.3"
+date:   2021-01-02
+category: "announcements"
+tags: [releases, 2021]
+---
+
+Development on Team Hephy's "Hephy Workflow v2.22" continues! A new patch release, v2.22.3, has been made on January 2, which includes updated releases of Controller, Fluentd, NSQ, Slugbuilder, and [teamhephy/workflow][], the umbrella chart.
+
+You can find [the changelogs](https://docs.teamhephy.com/changelogs/v2.22.3/) in the usual place, in [the docs][], right next to the [contributor guide][]... which is unfortunately a bit dated, (though still full of useful information for anyone seeking to volunteer or contribute with our team.)
+
+The next Open Roadmap meeting will be Thursday Feb 4 at 2PM Eastern. (Apologies as well that in our docs, [the Roadmap][] itself has not been updated since 2017. Volunteer opportunities!)
+
+As the Zoom meeting link is changing due to some news we discussed at [the January open roadmap][], please join us [on Slack][] before the meeting time to join, or please [join our Slack][] if you are new to the community.
+
+All are welcome to attend. Meeting time is set as usual for 2:00PM EST on the first Thursday of every month.
+
+Thanks!
+
+– Kingdon
+
+[teamhephy/workflow]: https://github.com/teamhephy/workflow
+[the docs]: https://docs.teamhephy.com/
+[the docs mirror]: https://teamhephy.info/docs/workflow
+[contributor guide]: https://docs.teamhephy.com/contributing/overview/
+[the Roadmap]: https://docs.teamhephy.com/roadmap/roadmap/
+[the January open roadmap]: https://docs.google.com/document/d/1O0hzCszOJ5Pg1j8h8Exn397oLnVyChZM-A6JpgCTA6w/edit
+[on Slack]: https://teamhephy.slack.com/archives/C6Z7XLEAW
+[join our Slack]: https://slack.teamhephy.com/
