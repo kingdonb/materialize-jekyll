@@ -44,5 +44,6 @@ I hope this helps someone! It took me a whole afternoon to figure this out mysel
 [Helm's post-install hook]: https://helm.sh/docs/topics/charts_hooks/#the-available-hooks
 [maps its own pre/post sync hooks]: https://argoproj.github.io/argo-cd/user-guide/helm/#helm-hooks
 [not a clean mapping]: https://github.com/argoproj/argo-cd/issues/355#issuecomment-482237019
+[PostSync waits]: https://argoproj.github.io/argo-cd/user-guide/resource_hooks/#__code_0
 [maintainers recommend Helm Operator]: https://github.com/argoproj/argo-cd/issues/4288#issuecomment-693701155
 [Three other deployments]: https://github.com/adfinis-sygroup/helm-charts/issues/143#issuecomment-748361114
